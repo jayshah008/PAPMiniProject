@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <form action="http://127.0.0.1:5000/login" method="post">
+        <div class="container">
+            <form class="form" method="post">
+                <div class="login-detail">
+                    <h3> User Name</h3>
+                    <input type="text" placeholder="Enter Login ID" name="uname" id="username" required>
+
+                    <h3> Password </h3>
+                    <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+                    <h3> Captcha </h3>
+                    <img src="static/images/cap.png" alt="image" height="100px" width="200px">
+                    <input type="text" placeholder="Enter Captcha" name="captcha" id="captcha" required>
+
+                    <center>
+                        <button type="submit" class="Login">Login</button>
+                    </center>
+                </div>
+            </form>
+        </div>
+
+    </form>
+</body>
+
+</html>
